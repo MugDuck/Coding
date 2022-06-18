@@ -1,5 +1,6 @@
 
-body{ background-color: #393E46;}
+body{ background-color: #EEEEEE;
+    font-family:'Montserrat', sans-serif;}
 h1{ width: 1100px;
     border-radius: 15px 15px 0px 0px;
     font-family:'Montserrat', sans-serif;
@@ -13,7 +14,8 @@ h1{ width: 1100px;
     background-color: #00ADB5;
     border-radius: 0px 0px 15px 15px;
     text-align: center;
-    margin: auto;}
+    margin: auto;
+    }
     div{
         width: 1100px;
     background-color: #222831;
@@ -23,7 +25,7 @@ h1{ width: 1100px;
     margin: auto;}
     .liHeader{
         color: #EEEEEE;
-        font-family:'Montserrat', sans-serif;
+        
         text-align: left;
         font-size: 38px;
         margin-left: -75px;
