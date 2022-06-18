@@ -73,7 +73,9 @@ div{
     margin: auto;
     justify-items: center;
 }
-
+a{
+    color: #EEEEEE;
+}
 p{
     font-family: 'Montserrat', sans-serif;
     width: 90%;
