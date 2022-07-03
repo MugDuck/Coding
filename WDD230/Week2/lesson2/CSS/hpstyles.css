@@ -1,0 +1,238 @@
+:root{
+--basefont: 20px;
+--basenavfont: 25px;
+--baseHeaderfont: 50px;
+--basewidth: 90;
+--basenavwidth: 75;
+--baseimgwidth: 20;
+--bodyBGColor:skyblue;
+--bodyFontColor:Navy;
+--navBGColor: silver;
+--navhovercolor:white;
+--divbodyBGColor:rgb(80, 80, 80);
+--mainFont: none;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bodyBGColor);
+    color: var(--bodyFontColor);
+    font-size: calc(var(--basefont) * 1vw);
+    width: calc(var(--basewidth) * 1vw);
+    align-content: center;
+    margin: auto;
+}
+p{
+    color: black;
+    font-size: 20px;
+}
+
+/*Header*/
+.headerContainer{
+    border-radius: 15px 15px 0px 0px;
+    font-size: var(--basenavfont);
+    display: inline-flex;
+    
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--basewidth) * 1vw);
+    background-color: var(--navBGColor);
+    
+}
+.dashhp{
+    display: none;
+}
+.hpImg{
+    margin: auto;
+    
+}
+.hpImg:hover{
+    cursor: pointer;
+    
+}
+.hpTitle{
+    font-size: var(--baseHeaderfont);
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    
+}
+/*Nav Container*/
+.hpNavigator{
+    
+    text-align: center;
+    background-color: var(--navBGColor);
+    font-size: var(--basenavfont);
+    display: inline-block;
+    margin: auto;
+    align-content: center;
+}
+.hpNav{
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    background-color: var(--navBGColor);
+    font-size: var(--basenavfont);
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+.menu{
+    background-color: var(--divbodyBGColor);
+    text-align: center;
+    border: none;
+    font-size: var(--basenavfont);
+    outline: none;
+    margin: auto;
+    padding: 10px;
+}
+.activ, .menu:hover{
+background-color: var(--bodyFontColor);
+color: var(--bodyBGColor);
+cursor: pointer;
+}
+p.dash{
+    background-color: var(--divbodyBGColor);
+    margin: auto;
+    padding: 10px;
+}
+#other:hover{
+    border-radius: 0px 0px 15px 15px;
+}
+.dash:hover{
+    background-color: var(--bodyFontColor);
+    color: var(--bodyBGColor);
+    cursor: pointer;
+}
+.dash{
+    text-align: center;
+    display: block;
+  overflow: hidden;
+}
+/*-------------------------------------------------------------------------*/
+/*Content Container*/
+.contentContainer{
+    background-color: var(--navBGColor);
+}
+.urlExample{
+    color:black;
+}
+p#purpose{
+    color: black;
+}
+h3{
+    background-color: var(--divbodyBGColor);
+    color:var(--bodyBGColor);
+}
+
+a{
+    color: black;
+    font-size: 20px;
+}
+a:hover{
+    color:navy;
+}
+/**----------------------------------------------------------------------------/
+/*Footer*/
+.footerText{
+    text-align: center;
+    background-color: var(--divbodyBGColor);
+    color:white;
+    border-radius: 0px 0px 15px 15px;
+}
+.WDDsite{
+    color: white;
+}
+.WDDsite:hover{
+    color: var(--bodyBGColor);
+}
+/*-------------------------------------------------------------------------------*/
+/*Tablet*/
+@media only screen and (min-width: 37.5em) {
+    
+    .hpTitle{
+        font-size: var(--baseHeaderfont);
+        text-align: left;
+        margin: auto;
+        margin-left: -45px;
+        padding: 20px;
+    }
+    .hpImg{
+        width:150px
+    }
+    .menu{
+        
+        text-align: left;
+        
+    }
+    .dash{
+        text-align: left;
+        
+    }
+}
+/*------------------------------------------------------------------------------------*/
+/*Desktop*/
+@media only screen and (min-width: 60em) {
+    .hpNavigator{
+        text-align: center;
+        background-color: var(--navBGColor);
+        font-size: var(--basenavfont);
+        display: flex;
+        margin: auto;
+    }
+    .menu{
+        display: none;
+    }
+    .dashhp{
+        background-color: var(--divbodyBGColor);
+        font-size: calc(var(--basenavfont) * 1vw);
+        text-align: left;
+        display: inline-block;
+        margin: auto;
+        justify-content: left;
+        padding: 20px;
+        
+        width:calc(10*1vw);
+    }
+    #preston{
+        border-radius: 15px 0px 0px 0px;
+    }
+    #gallery{
+        border-radius: 0px 0px 15px 0px;
+    }
+    .dashhp:hover{
+        background-color: var(--bodyFontColor);
+        color: var(--bodyBGColor);
+        cursor: pointer;
+    }
+    .dash{
+        display: none;
+    }
+    .headerContainer{
+        font-size: var(--basenavfont);
+        margin: auto;
+        justify-content: left;
+        background-color: var(--navBGColor);
+        
+    }
+    .hpNavigator{
+        text-align: center;
+        background-color: var(--navBGColor);
+        font-size: var(--basenavfont);
+        margin: auto;
+        align-content: center;
+    }
+    .hpImg{
+        margin: auto;
+        width: 100px;
+
+        
+    }
+    .hpTitle{
+        font-size: var(--baseHeaderfont);
+        margin: auto;
+        padding: 15px;
+        margin-left: calc(-2% *1vw);
+        
+    }
+}
