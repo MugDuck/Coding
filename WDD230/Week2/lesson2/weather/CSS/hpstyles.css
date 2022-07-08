@@ -20,6 +20,7 @@ body{
     font-size: calc(var(--basefont) * 1vw);
     width: calc(var(--basewidth) * 1vw);
     align-content: center;
+    justify-content: center;
     margin: auto;
 }
 p{
@@ -46,6 +47,8 @@ p{
 .hpImg{
     margin: auto;
     
+    width:125px
+    
 }
 .hpImg:hover{
     cursor: pointer;
@@ -55,7 +58,7 @@ p{
     font-size: var(--baseHeaderfont);
     text-align: center;
     margin: auto;
-    padding: 15px;
+    padding: 20px;
     
 }
 /*Nav Container*/
@@ -86,7 +89,7 @@ p{
     margin: auto;
     padding: 10px;
 }
-.activ, .menu:hover{
+.active, .menu:hover{
 background-color: var(--bodyFontColor);
 color: var(--bodyBGColor);
 cursor: pointer;
@@ -132,6 +135,26 @@ a{
 a:hover{
     color:navy;
 }
+img.frstImg{
+    width: calc(var(--basewidth) * 1vw);
+}
+img.secImg{
+    width: calc(var(--basewidth) * 1vw);
+}
+div.weatherContainer{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.548);
+    margin-top: -100px;
+    padding: 30px;
+    color: aliceblue;
+}
+div.weatherBlock{
+    margin: auto;
+    padding: 5px;
+}
+div.socialFooter{
+    text-align: center;
+}
 /**----------------------------------------------------------------------------/
 /*Footer*/
 .footerText{
@@ -168,6 +191,14 @@ a:hover{
     .dash{
         text-align: left;
         
+    }
+    div.weatherContainer{
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.548);
+        
+        margin-top: -700;
+        padding: 30px;
+        color: aliceblue;
     }
 }
 /*------------------------------------------------------------------------------------*/
@@ -224,7 +255,7 @@ a:hover{
     }
     .hpImg{
         margin: auto;
-        width: 100px;
+        width: 160px;
 
         
     }
